@@ -1,7 +1,6 @@
 class Solution(object):
     def longestCommonPrefix(self, strs):
         answer = ""
-        n = len(strs)
         min_word = min(strs, key=len)
         for i in range(len(min_word)):
             for j in strs:
